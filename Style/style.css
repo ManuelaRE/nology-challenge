@@ -110,11 +110,11 @@ div {
 
 
 .change .bg-cover {
-    transform: scale(150);
+    transform: scale(60);
 }
 
 .nav-list {
-    height: 100vh;
+    height:100vh;
     width: 100vw;
     position: absolute;
     display: flex;
@@ -133,8 +133,8 @@ div {
     visibility: visible;
 }
 
-  .nav-item {
-    margin: 1.5vh 0;
+.nav-item {
+    margin: 1vh 0;
 }
 
 .nav-link {

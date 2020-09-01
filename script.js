@@ -22,9 +22,10 @@ document.querySelector(".hamburger-menu").addEventListener("click", () => {
   document.querySelector(".navigation").classList.toggle("change");
 });
 
-document.querySelector(".nav-item").addEventListener("click", () => {
-  document.querySelector(".bg-cover").classList.toggle("change");
+document.querySelector(".nav-list").addEventListener("click", () => {
+  document.querySelector(".navigation").classList.toggle("change");
 });
+
 
 
 

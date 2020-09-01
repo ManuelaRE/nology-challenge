@@ -11,6 +11,6 @@ Items to improve / fix:
 - On Work page create slide to see more work by pressing arrow.
 - Add a transition effect of background colour when scrolling between pages.
 - ~~Add effect on contact page to change the work “clever” every two seconds.~~
-- Align in centre the text in the menu button.
-- Make the menu buttons work.
+- ~~Make the menu buttons work.~~
+- Keep the menu fixed while open (no-scroll)
 - ~~Improve responsiveness.~~
