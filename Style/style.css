@@ -68,9 +68,13 @@ div {
     transition: all 0.5s;
 }
 
+.hamburger-menu:focus {
+  outline: none;
+}
 
 .change .hamburger-menu {
     background-color: #282B4A;
+    outline: none;
 }
 
 .line {
