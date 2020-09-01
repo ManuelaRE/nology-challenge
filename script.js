@@ -63,7 +63,7 @@ function sleep(milliseconds) {
 
 // Contact page - repeat with the interval of 2 seconds
 
-const words = ['Clever', 'Interesting', 'Innovative', 'New', 'Diverse'];
+const words = ['Clever', 'Interesting', 'Innovative', 'New', 'Diverse', 'Creative', 'Unique', 'Beautiful'];
 
 const newFun = () => {
   const randomWord = Math.floor(Math.random() * words.length);

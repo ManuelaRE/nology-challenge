@@ -199,6 +199,35 @@ div {
     letter-spacing: 0.04em;
 }
 
+
+// arrow
+.item {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  position: relative;
+}
+
+
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  color: #FFD491;
+  margin-left: 50px;
+  position: absolute;
+  margin-top: 30%;
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
 /* Progress bar menu */
 .footer {
     position: fixed;
