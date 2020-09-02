@@ -60,6 +60,7 @@ function sleep(milliseconds) {
     while (currentDate - date < milliseconds);
 }
 
+
 // Contact page - repeat with the interval of 2 seconds
 
 const words = ['Clever', 'Interesting', 'Innovative', 'New', 'Diverse', 'Creative', 'Unique', 'Beautiful'];
