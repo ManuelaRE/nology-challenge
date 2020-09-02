@@ -1,31 +1,29 @@
 // Show progress bar when user scrolls //
 
-window.onscroll = function () {
+window.onscroll = function() {
     let scroll = document.body.scrollLeft || document.documentElement.scrollLeft;
-    let total =
-      document.documentElement.scrollWidth - document.documentElement.clientWidth;
-    document.getElementById("progressBar").style.width =
-      (scroll / total) * 100 + "%";
+    let total = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+    document.getElementById("progressBar").style.width = (scroll / total) * 100 + "%";
   };
 
-  window.onwheel = function (e) {
+window.onwheel = function(e) {
     let speed = parseInt(document.documentElement.clientWidth / 5);
     window.scrollBy(Math.sign(e.deltaY) * speed, 0);
-  };
-
-
+};
 
 
 // make menu button extend full screen//
 
-document.querySelector(".hamburger-menu").addEventListener("click", () => {
+const burgerMenu = document.querySelector(".hamburger-menu");
+const navList = document.querySelector(".nav-list");
+
+burgerMenu.addEventListener("click", () => {
   document.querySelector(".navigation").classList.toggle("change");
 });
 
-document.querySelector(".nav-list").addEventListener("click", () => {
+navList.addEventListener("click", () => {
   document.querySelector(".navigation").classList.toggle("change");
 });
-
 
 
 
@@ -41,7 +39,7 @@ let text = '';
 (function type() {
     if (count == typeString.length) {
       count = 0;
-    }
+    };
     selectedText = typeString[count];
     text = selectedText.slice(0, ++i);
     document.getElementById('greeting').innerHTML = text;
@@ -65,10 +63,11 @@ function sleep(milliseconds) {
 // Contact page - repeat with the interval of 2 seconds
 
 const words = ['Clever', 'Interesting', 'Innovative', 'New', 'Diverse', 'Creative', 'Unique', 'Beautiful'];
+const adjective = document.getElementById('clever');
 
-const newFun = () => {
+const newWord = () => {
   const randomWord = Math.floor(Math.random() * words.length);
-  document.getElementById('clever').innerHTML = words[randomWord];
+  adjective.innerHTML = words[randomWord];
 }
 
-let timerId = setInterval(newFun, 2000);
+let timerId = setInterval(newWord, 2000);

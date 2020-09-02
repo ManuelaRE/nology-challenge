@@ -35,7 +35,7 @@ div {
 
 /* Header section */
 
-.header {
+header {
     width: 100%;
     display: inline-flex;
 }
@@ -158,7 +158,7 @@ div {
 
 /* Main section */
 
-.main{
+.main-one{
     position: relative;
     margin-top: 5%;
 }
